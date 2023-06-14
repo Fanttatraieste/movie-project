@@ -1,4 +1,4 @@
-const key = require('./key').key;
+const keyObj = require('./key').key;
 
 const url = `https://api.themoviedb.org/3/movie/150?api_key=${key}`;
 
