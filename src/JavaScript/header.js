@@ -1,4 +1,5 @@
 //aici ar trb sa importez (functia de modal)
+const modal = require('./modal');
 
 module.exports = () => {
   const search = document.querySelector('.search-bar');
@@ -14,12 +15,14 @@ module.exports = () => {
     let movieObj;
     (async () => {
       const response = await fetch(url);
-      const res = await response.json(url);
+      const res = await response.json();
 
       movieObj = res.results[0];
-      console.log(movieObj);
+
+      //console.log(movieObj);
 
       //aici ar trb sa chem modalul si sa trimit obiectul movieObj
+      modal(movieObj, key);
     })();
 
     // console.log(movieObj);

@@ -75,7 +75,7 @@ module.exports = (pageNumber, key) => {
         release_date: release_date,
       };
 
-      //console.log(obj);
+      //  console.log(obj);
 
       movies.push(obj);
     }
@@ -114,7 +114,7 @@ module.exports = (pageNumber, key) => {
 
     elDiv.appendChild(text);
 
-    console.log(genres);
+    // console.log(genres);
 
     return elDiv;
   }
@@ -123,7 +123,7 @@ module.exports = (pageNumber, key) => {
     const movieList = await body(pageNumber, key);
     //console.log(movieList[0].genres[0].name);
 
-    console.log(movieList);
+    //console.log(movieList);
 
     const movieContainer = document.querySelector('.movies__container');
     movieList.forEach(e => {
