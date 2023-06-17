@@ -15,8 +15,8 @@
     content: ' ';
   }
   &-inner {
-    width: 700px;
-    height: 700px;
+    width: 950px;
+    height: 800px;
     padding: 50px;
     background-color: #fff;
     position: relative;
@@ -143,7 +143,7 @@ span {
     border: 1px solid #212121;
     border-radius: 100px;
     text-transform: uppercase;
-    padding: 12px;
+    padding: 14px 32px;
     &:hover {
       background-color: rgba(185, 47, 44, 1);
       color: #fff;
